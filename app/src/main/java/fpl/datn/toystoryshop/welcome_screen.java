@@ -28,7 +28,7 @@ public class welcome_screen extends AppCompatActivity {
 
         // Điều hướng đến màn hình chính sau khi load xong
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(welcome_screen.this, MainActivity.class);
+            Intent intent = new Intent(welcome_screen.this, signIn_screen.class);
             startActivity(intent);
             finish();
         }, SPLASH_SCREEN_TIME_OUT);
